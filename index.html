@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="scripts/project-tooltip.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#home" class="logo">Ø</a>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section id="home" class="main-content">
+        <div class="floating-element">
+            <div class="frame-caption">Scattered Yellow, 2024. Oil & Arcylic. By Me</div>
+        </div>
+        <div class="info-section">
+            <h1>Hazik Chaudhry</h1>
+            <p>Living in Auckland, New Zealand, I am currently pursuing Part II of my Software Engineering degree at the University of Auckland. I am passionate about creating meaningful experiences through software development, design, and art.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="bento-grid">
+            <div class="bento-item">
+                <div class="bento-content">
+                    <h3>ENSO</h3>
+                    <p>Local LLM-driven interactive learning assistant</p>
+                </div>
+                <img src="assets/images/ENSO2.png" alt="ENSO">
+            </div>
+            <div class="bento-item">
+                <div class="bento-content">
+                    <h3>Art</h3>
+                    <p>Oil & Digital</p>
+                </div>
+                <img src="assets/images/paint.jpg" alt="Artwork">
+            </div>
+            <div class="bento-item">
+                <div class="bento-content">
+                    <h3>Collborative Game Design</h3>
+                    <p>Award winning game design</p>
+                </div>
+                <img src="assets/images/pixel.gif" alt="Dragon GIF ">
+            </div>
+            <div class="bento-item">
+                <div class="bento-content">
+                    <h3>Atlephobia v0.13</h3>
+                    <p>Side-On turn based pixel RPG</p>
+                </div>
+                <img src="assets/images/game.png" alt="AI Music Project">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <div class="about-image"></div>
+        <div class="about-content">
+
+            <h1>About Me</h1>
+            <p>Currently living New Zealand, I am a Software Engineering student at the University of Auckland with a strong passion for the intersection of technology, design, and user experience. With a background spanning software development and game development, I bring a unique and multidisciplinary perspective to every project I undertake.</p>
+            <p>I believe that impactful technology should be intuitive, efficient, and user-centric. My approach combines analytical problem-solving with creative design, ensuring that every solution is both technically robust and engaging. Through hands-on experience in software development, web design, and game creation, I have developed a keen eye for detail and a commitment to delivering high-quality, meaningful experiences.</p>
+            
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-item">UI Design</span>
+                    <span class="skill-item">UX Research</span>
+                    <span class="skill-item">Prototyping</span>
+                    <span class="skill-item">User Testing</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Adobe Creative Suite</span>
+                    <span class="skill-item">HTML/CSS</span>
+                    <span class="skill-item">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">in</a>
+        <a href="https://instagram.com" target="_blank">ig</a>
+        <a href="https://behance.net" target="_blank">be</a>
+    </div>
+
+    <div class="scroll-indicator">
+        <span class="arrow"></span>
+    </div>
+    <script type="module" src="scripts/frame3d.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
