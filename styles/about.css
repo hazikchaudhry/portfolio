@@ -1,16 +1,20 @@
 .about-container {
     display: flex;
     padding: 4rem 2rem;
+
+
     gap: 4rem;
     align-items: flex-start;
 }
 
 .about-image {
     width: 40%;
+    
     height: 500px;
     background-image: url('../assets/images/me_pixel.png');
     background-size: cover;
     background-position: center;
+
     border-radius: 5px;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -19,6 +23,7 @@
 
 .about-content {
     width: 50%;
+
 }
 
 .about-content h1 {
@@ -28,6 +33,7 @@
 
 .about-content p {
     font-size: 1rem;
+
     line-height: 1.8;
     color: #d1d1d1;
     margin-bottom: 1.5rem;
@@ -38,6 +44,7 @@
     font-size: 1.1rem;
     line-height: 1.8;
     color: #d1d1d1;
+
     max-width: 600px;
 }
 
@@ -54,6 +61,7 @@
 
 .skills {
     margin-top: 3rem;
+
 }
 
 .skills h2 {
