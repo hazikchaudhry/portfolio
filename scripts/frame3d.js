@@ -10,6 +10,7 @@ class Frame3D {
         this.currentRotation = { x: 0, y: 0 };
 
         this.init();
+
     }
 
     init() {
@@ -25,14 +26,19 @@ class Frame3D {
         // Create frame
         const textureLoader = new THREE.TextureLoader();
         const texture = textureLoader.load('assets/images/paint.jpg');
+
         const geometry = new THREE.BoxGeometry(4, 3.8, 0.2);
         const material = new THREE.MeshPhysicalMaterial({
+            
             map: texture,
+
             metalness: 0.2,
             roughness: 0.4,
+
             reflectivity: 1,
             clearcoat: 0.5,
             clearcoatRoughness: 0.3
+
         });
 
         this.frame = new THREE.Mesh(geometry, material);
@@ -46,10 +52,12 @@ class Frame3D {
 
         const pointLight = new THREE.PointLight(0xffffff, 1.5);
         pointLight.position.set(5, 5, 5);
+
         this.scene.add(pointLight);
 
         const backLight = new THREE.PointLight(0xffffff, 1.2);
         backLight.position.set(-5, 3, -5);
+
         this.scene.add(backLight);
 
         // Event listeners
@@ -86,6 +94,7 @@ class Frame3D {
 
         if (this.frame) {
             this.frame.rotation.x = this.currentRotation.x;
+
             this.frame.rotation.y = this.currentRotation.y;
         }
 
