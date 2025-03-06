@@ -13,14 +13,11 @@
 }
 
 .frame-caption {
-    position: absolute;
-    bottom: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #bbbaba;
-    font-size: 0.9rem;
+    padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
-    width: 100%;
+    color: #e0e0e0;
+    font-size: 0.9rem;
 }
 
 .info-section {
